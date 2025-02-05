@@ -1,11 +1,66 @@
+
+/* Custom Font for Titles and navigation */
+@font-face {
+  font-family: 'Pixeloid';
+  src: url('fonts/PixeloidMono-d94EV.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Google Font for body */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+/* General Body Styling */
 body {
-  background-color: aquamarine;
+  background-color: black;
+  font-family: 'Courier Prime', monospace;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
-h1 {
-  color:lightslategray;
+
+/* Title and Heading Styling */
+h1, h3 {
+  color: white;
   text-align: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Pixeloid', sans-serif;
+  margin: 0;
+  padding-top: 20px;
 }
+/* List Styling */
 li {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Pixeloid', sans-serif;
+  color: white;
 }
+
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFD700;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid #4B0082;
+  border-radius: 5px;
+
+}
+.pixel-art {
+  width: 500px;         /* Set the desired width */
+  height: 500px;        /* Set the desired height */
+  image-rendering: pixelated;  /* Ensures sharp, pixelated edges */
+}
+
+
+
+
