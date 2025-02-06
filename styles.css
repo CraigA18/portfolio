@@ -11,6 +11,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 /* General Body Styling */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 0px;
+}
 body {
   background-color: black;
   font-family: 'Courier Prime', monospace;
@@ -67,14 +81,38 @@ nav ul li a {
   border-radius: 5px;
 
 }
-.pixel-art {
-  width: 500px;         /* Set the desired width */
-  height: 500px;        /* Set the desired height */
-  image-rendering: pixelated;  /* Ensures sharp, pixelated edges */
-}
 
 p {
   font-size: 30px;
+}
+
+.intro-page {
+  font-family: 'Courier Prime', monospace;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.badges {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.badge {
+  width: 300px;
+  height: 300px;
+  image-rendering: pixelated;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  height: 10px;
+  width: 10px;
 }
 
 
